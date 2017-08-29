@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/compress-test/compress-test.iml" filepath="$PROJECT_DIR$/compress-test/compress-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/core.iml" filepath="$PROJECT_DIR$/.idea/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/curator-test/curator-test.iml" filepath="$PROJECT_DIR$/curator-test/curator-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guava-test/guava-test.iml" filepath="$PROJECT_DIR$/guava-test/guava-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdk-test/jdk-test.iml" filepath="$PROJECT_DIR$/jdk-test/jdk-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-test/netty-test.iml" filepath="$PROJECT_DIR$/netty-test/netty-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-test/spring-test.iml" filepath="$PROJECT_DIR$/spring-test/spring-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/unsafe-test/unsafe-test.iml" filepath="$PROJECT_DIR$/unsafe-test/unsafe-test.iml" />
+    </modules>
+  </component>
+</project>
