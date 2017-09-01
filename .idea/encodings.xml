@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/compress-test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/curator-test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/guava-test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/unsafe-test" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
