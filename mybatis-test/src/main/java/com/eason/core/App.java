@@ -1,12 +1,12 @@
 package com.eason.core;
 
-import org.apache.ibatis.session.Configuration;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.mapping.MappedStatement;
+import org.apache.ibatis.session.Configuration;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.apache.ibatis.type.TypeAliasRegistry;
-import org.apache.ibatis.type.TypeHandlerRegistry;
+import org.mybatis.spring.SqlSessionFactoryBean;
 
 import java.io.InputStream;
 
@@ -27,5 +27,6 @@ public class App
         System.out.println(sqlSessionFactory);
 
         MappedStatement mappedStatement;
+        SqlSessionFactoryBean sqlSessionFactoryBean;
     }
 }
