@@ -4,6 +4,7 @@ import com.eason.core.spring.bean.EmployeeDTO;
 import com.eason.core.spring.factory.EmployeeFactoryBean;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
