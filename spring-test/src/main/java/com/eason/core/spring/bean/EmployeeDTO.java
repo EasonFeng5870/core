@@ -44,4 +44,5 @@ public class EmployeeDTO {
     public void setDesignation(String designation) {
         this.designation = designation;
     }
+
 }

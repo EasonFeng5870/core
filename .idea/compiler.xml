@@ -18,6 +18,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="compress-test" />
         <module name="curator-test" />
+        <module name="fastjson-test" />
         <module name="guava-test" />
         <module name="jdk-test" />
         <module name="mybatis-test" />
@@ -30,6 +31,7 @@
       <module name="compress-test" target="1.5" />
       <module name="core" target="1.5" />
       <module name="curator-test" target="1.5" />
+      <module name="fastjson-test" target="1.5" />
       <module name="guava-test" target="1.5" />
       <module name="jdk-test" target="1.5" />
       <module name="mybatis-test" target="1.5" />
