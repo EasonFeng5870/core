@@ -10,11 +10,11 @@
                         http://www.springframework.org/schema/aop 
                         http://www.springframework.org/schema/aop/spring-aop.xsd">
     
-	<bean id="manager" class="com.eason.core.spring.factory.EmployeeFactoryBean">
+	<bean id="manager" class="com.eason.core.spring.factory.EmployeeFactoryBean" scope="prototype">
 		<property name="designation" value="Manager" />
 	</bean>
 
-    <bean id="director" class="com.eason.core.spring.factory.EmployeeFactoryBean">
+    <bean id="director" class="com.eason.core.spring.factory.EmployeeFactoryBean" scope="prototype">
         <property name="designation" value="Director" />
     </bean>
 </beans>

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/compress-test/compress-test.iml" filepath="$PROJECT_DIR$/compress-test/compress-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/core.iml" filepath="$PROJECT_DIR$/.idea/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/curator-test/curator-test.iml" filepath="$PROJECT_DIR$/curator-test/curator-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fastjson-test/fastjson-test.iml" filepath="$PROJECT_DIR$/fastjson-test/fastjson-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/guava-test/guava-test.iml" filepath="$PROJECT_DIR$/guava-test/guava-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdk-test/jdk-test.iml" filepath="$PROJECT_DIR$/jdk-test/jdk-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis-test/mybatis-test.iml" filepath="$PROJECT_DIR$/mybatis-test/mybatis-test.iml" />

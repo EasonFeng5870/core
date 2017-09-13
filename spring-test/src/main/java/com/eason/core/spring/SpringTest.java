@@ -19,13 +19,15 @@ public class SpringTest {
         ApplicationContext applicationContext1 = new ClassPathXmlApplicationContext("spring-applicationContext.xml");
         EmployeeDTO manager = (EmployeeDTO) applicationContext1.getBean("manager");
         System.out.println(manager);
-        EmployeeDTO director = (EmployeeDTO) applicationContext1.getBean("director");
-        System.out.println(director);
+        EmployeeDTO manager2 = (EmployeeDTO) applicationContext1.getBean("manager");
+        System.out.println(manager2);
+//        EmployeeDTO director = (EmployeeDTO) applicationContext1.getBean("director");
+//        System.out.println(director);
 
-        EmployeeFactoryBean managerFactoryBean = (EmployeeFactoryBean) applicationContext1.getBean("&manager");
-        System.out.println(managerFactoryBean);
-        System.out.println(managerFactoryBean.getDesignation());
-        System.out.println(managerFactoryBean.getObjectType());
-        System.out.println(managerFactoryBean.getObject());
+//        EmployeeFactoryBean managerFactoryBean = (EmployeeFactoryBean) applicationContext1.getBean("&manager");
+//        System.out.println(managerFactoryBean);
+//        System.out.println(managerFactoryBean.getDesignation());
+//        System.out.println(managerFactoryBean.getObjectType());
+//        System.out.println(managerFactoryBean.getObject());
     }
 }
