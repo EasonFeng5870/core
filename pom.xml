@@ -16,6 +16,7 @@
         <module>compress-test</module>
         <module>mybatis-test</module>
         <module>fastjson-test</module>
+        <module>payment</module>
     </modules>
 
     <properties>
