@@ -21,10 +21,12 @@
         <module name="fastjson-test" />
         <module name="guava-test" />
         <module name="jdk-test" />
+        <module name="kafka-test" />
         <module name="mybatis-test" />
         <module name="netty-test" />
         <module name="payment" />
         <module name="spring-test" />
+        <module name="thumbnailator-test" />
         <module name="unsafe-test" />
       </profile>
     </annotationProcessing>
@@ -35,10 +37,12 @@
       <module name="fastjson-test" target="1.5" />
       <module name="guava-test" target="1.5" />
       <module name="jdk-test" target="1.5" />
+      <module name="kafka-test" target="1.5" />
       <module name="mybatis-test" target="1.5" />
       <module name="netty-test" target="1.5" />
       <module name="payment" target="1.5" />
       <module name="spring-test" target="1.5" />
+      <module name="thumbnailator-test" target="1.5" />
       <module name="unsafe-test" target="1.5" />
     </bytecodeTargetLevel>
   </component>
