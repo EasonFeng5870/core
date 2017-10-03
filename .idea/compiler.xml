@@ -26,6 +26,7 @@
         <module name="netty-test" />
         <module name="payment" />
         <module name="spring-test" />
+        <module name="springmvc" />
         <module name="thumbnailator-test" />
         <module name="unsafe-test" />
       </profile>
@@ -42,6 +43,7 @@
       <module name="netty-test" target="1.5" />
       <module name="payment" target="1.5" />
       <module name="spring-test" target="1.5" />
+      <module name="springmvc" target="1.8" />
       <module name="thumbnailator-test" target="1.5" />
       <module name="unsafe-test" target="1.5" />
     </bytecodeTargetLevel>

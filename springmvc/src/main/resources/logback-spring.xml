@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+
+    <appender name="pushAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/advertisement.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/advertisement-%d{yyyy-MM-dd}.gz</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%date{"yyyy-MM-dd'T'HH:mm:ss.SSSZ"} %-5level [%thread] %logger{35}.%M:%line - %msg %n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%date{"yyyy-MM-dd'T'HH:mm:ss.SSSZ"} %-5level [%thread] %logger{35}.%M:%line - %msg %n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.eason.springmvc" level="debug">
+        <appender-ref ref="pushAppender"/>
+        <appender-ref ref="STDOUT" />
+    </logger>
+
+    <root level="debug">
+        <appender-ref ref="pushAppender"/>
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>
