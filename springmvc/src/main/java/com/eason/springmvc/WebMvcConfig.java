@@ -1,10 +1,12 @@
 package com.eason.springmvc;
 
+import com.eason.springmvc.converter.MyMessageConverter;
 import com.eason.springmvc.interceptor.MyInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.accept.ContentNegotiationManager;
@@ -42,29 +44,29 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
         return viewResolver;
     }
 
-    @Bean
-    public ViewResolver contentNegotiatingViewResolver(ContentNegotiationManager manager) {
-        ContentNegotiatingViewResolver viewResolver = new ContentNegotiatingViewResolver();
-        viewResolver.setContentNegotiationManager(manager);
-        List<ViewResolver> resolvers = new ArrayList<>();
-        resolvers.add(jsonViewResolver());
-        resolvers.add(viewResolver());
-        viewResolver.setViewResolvers(resolvers);
-        return viewResolver;
-    }
-
-    @Bean
-    public ViewResolver jsonViewResolver() {
-        ViewResolver jsonViewResolver = new ViewResolver() {
-            @Override
-            public View resolveViewName(String viewName, Locale locale) throws Exception {
-                MappingJackson2JsonView mappingJackson2JsonView = new MappingJackson2JsonView();
-                mappingJackson2JsonView.setPrettyPrint(Boolean.TRUE);
-                return mappingJackson2JsonView;
-            }
-        };
-        return jsonViewResolver;
-    }
+//    @Bean
+//    public ViewResolver contentNegotiatingViewResolver(ContentNegotiationManager manager) {
+//        ContentNegotiatingViewResolver viewResolver = new ContentNegotiatingViewResolver();
+//        viewResolver.setContentNegotiationManager(manager);
+//        List<ViewResolver> resolvers = new ArrayList<>();
+//        resolvers.add(jsonViewResolver());
+//        resolvers.add(viewResolver());
+//        viewResolver.setViewResolvers(resolvers);
+//        return viewResolver;
+//    }
+//
+//    @Bean
+//    public ViewResolver jsonViewResolver() {
+//        ViewResolver jsonViewResolver = new ViewResolver() {
+//            @Override
+//            public View resolveViewName(String viewName, Locale locale) throws Exception {
+//                MappingJackson2JsonView mappingJackson2JsonView = new MappingJackson2JsonView();
+//                mappingJackson2JsonView.setPrettyPrint(Boolean.TRUE);
+//                return mappingJackson2JsonView;
+//            }
+//        };
+//        return jsonViewResolver;
+//    }
 
     @Bean
     public MyInterceptor createInterceptor() {
@@ -93,6 +95,16 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/see").setViewName("/see");
         registry.addViewController("/async").setViewName("/async");
+        registry.addViewController("/converter").setViewName("/converter");
+    }
+
+    @Override
+    public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
+        converters.add(converter());
+    }
+
+    private MyMessageConverter converter() {
+        return new MyMessageConverter();
     }
 
 }
