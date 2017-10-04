@@ -20,6 +20,7 @@
         <module>kafka-test</module>
         <module>thumbnailator-test</module>
         <module>springmvc</module>
+        <module>undertow-test</module>
     </modules>
 
     <properties>

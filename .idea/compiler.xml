@@ -28,6 +28,7 @@
         <module name="spring-test" />
         <module name="springmvc" />
         <module name="thumbnailator-test" />
+        <module name="undertow-test" />
         <module name="unsafe-test" />
       </profile>
     </annotationProcessing>
@@ -45,6 +46,7 @@
       <module name="spring-test" target="1.5" />
       <module name="springmvc" target="1.8" />
       <module name="thumbnailator-test" target="1.5" />
+      <module name="undertow-test" target="1.5" />
       <module name="unsafe-test" target="1.5" />
     </bytecodeTargetLevel>
   </component>
